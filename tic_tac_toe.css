@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero1,
+#hero2,
+#hero3,
+#hero4,
+#hero5,
+#hero6,
+#hero7,
+#hero8,
+#hero9 {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: azure;
+    font-size: 18vw;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+body {
+    user-select: none;
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.play {
+    display: grid;
+    background: linear-gradient(30deg, darkblue, black, gray);
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.play>p {
+    color: rgb(129, 196, 255);
+    font-family: 'Creepster', cursive;
+    font-size: 4vh;
+
+}
+
+.play>div>P {
+    color: aliceblue;
+    font-family: 'Fuggles', cursive;
+    font-weight: bold;
+    font-size: 7vh;
+    padding-bottom: 10vh;
+}
+
+#playbtn {
+    width: 40vh;
+    height: 40vh;
+    border-radius: 390px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfR_ybve7fuEo1Opu0Vzx8IzCAbaH9GXbVjg&usqp=CAU);
+    background-size: cover;
+}
+#playbtn:hover{
+    opacity: 80%;
+    animation: border 2s linear infinite alternate-reverse;
+
+}
+
+.box {
+    display: none;
+    width: 100vw;
+    min-width: 20px;
+    height: 100vh;
+    background: linear-gradient(30deg, darkblue, black, gray);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.row1,
+.row2,
+.row3 {
+    width: 90vw;
+    height: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticbox {
+    padding: 0;
+    cursor: pointer;
+    border-radius: 10%;
+    display: inline-flex;
+    width: 25vw;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#box1::before,
+#box2::before,
+#box3::before,
+#box4::before,
+#box5::before,
+#box6::before,
+#box7::before,
+#box8::before,
+#box9::before {
+    color: azure;
+    z-index: -1;
+    font-size: 16vw;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+#box1:hover,
+#box2:hover,
+#box3:hover,
+#box4:hover,
+#box5:hover,
+#box6:hover,
+#box7:hover,
+#box8:hover,
+#box9:hover {
+    opacity: 50%;
+}
+
+.computerbox,
+.player {
+    color: azure;
+    font-size: 16vw;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    background-size: cover;
+    border-radius: 10%;
+}
+
+.scoreboardbox {
+    display: none;
+    width: 100vw;
+    min-width: 20px;
+    height: 100vh;
+    background: linear-gradient(30deg, darkblue, black, gray);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.scoreboard {
+    user-select: text;
+    border-radius: 10%;
+    display: grid;
+    background-color: rgb(36, 36, 158);
+    color: lavender;
+    width: 50vw;
+    min-width: fit-content;
+    height: 50vh;
+    align-content: center;
+    justify-content: center;
+
+}
+.replay{
+    background-color: rgb(36, 36, 158);
+    color: lavender;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Creepster', cursive;
+    font-size: 4vh;
+    animation: border 0.3s linear infinite alternate-reverse;
+
+}
+.replay>a{
+    font-size: 2rem;
+    text-decoration: none;
+    animation: colorchangetitle 2s linear infinite alternate-reverse;
+}
+.replay:hover{
+    opacity: 70%;
+    animation: border 0.5s linear infinite alternate-reverse;
+}
+
+#title {
+    font-size: 2rem;
+    margin-bottom: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    font-weight: bolder;
+    animation: colorchangetitle 2s linear infinite alternate-reverse;
+}
+
+#compscore,
+#playerscore {
+    padding: 2px;
+    border: 2px solid rgb(216, 253, 4);
+    margin-bottom: 25%;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', serif, system-ui, -apple-system, Times;
+    color: rgb(21, 247, 255);
+    animation: border 2s linear infinite alternate-reverse;
+}
+
+@keyframes colorchangetitle {
+    0% {
+        color: rgb(255, 251, 31);
+    }
+
+    50% {
+        color: rgb(255, 198, 41);
+        filter: blur();
+    }
+
+    100% {
+        color: rgb(252, 111, 17);
+        filter: blur();
+    }
+
+}
+
+@keyframes border {
+    0% {
+        border: 2px solid rgb(253, 233, 52);
+    }
+
+    50% {
+        border: 2px solid rgb(253, 187, 4);
+    }
+
+    100% {
+        border: 2px solid rgb(253, 21, 4);
+    }
+}
